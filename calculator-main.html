@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        .container{
+            max-width: 300px;
+            margin: 5vh auto 0 auto;
+            box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+        }
+
+        #display{
+            height: 40px;
+            line-height: 40px;
+            padding: 16px 8px;
+            font-size: 25px;
+            text-align: right;
+        }
+
+        .buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border-bottom: 1px solid #999;
+            border-left: 1px solid #999;
+        }
+
+        .all:hover{
+            background-color: #999;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+        #clearAll,#divides,#multiply,#deleteOne,#button7,#button8,#button9,#subtract,#button4,
+        #button5,#button6,#add,#button1,#button2,#button3,#point,#button17,#button0,#button19,#equal{
+            border: 0.5px solid #999;
+            width: 83px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="display" type="text" autofocus value="">
+        <div class="buttons">
+            <input type="button" class="all" id="clearAll" value="C">
+            <input type="button" class="all" id="divides" value="÷">
+            <input type="button" class="all" id="multiply" value="x">
+            <input type="button" class="all" id="deleteOne" value=&larr;>
+            <input type="button" class="all" id="button7" value="7">
+            <input type="button" class="all" id="button8" value="8">
+            <input type="button" class="all" id="button9" value="9">
+            <input type="button" class="all" id="subtract" value="-">
+            <input type="button" class="all" id="button4" value="4">
+            <input type="button" class="all" id="button5" value="5">
+            <input type="button" class="all" id="button6" value="6">
+            <input type="button" class="all" id="add" value="+">
+            <input type="button" class="all" id="button1" value="1">
+            <input type="button" class="all" id="button2" value="2">
+            <input type="button" class="all" id="button3" value="3">
+            <input type="button" class="all" id="point" value=".">
+            <input type="button" class="all" id="button17" value="(">
+            <input type="button" class="all" id="button0" value="0">
+            <input type="button" class="all" id="button19" value=")">
+            <input type="button" class="all" id="equal" value="=">
+        </div>
+    </div>
+    <script>
+        let arr = [];
+
+        let clear = document.getElementById("clearAll");
+        let division = document.getElementById("divides");
+        let multiplication = document.getElementById("multiply");
+        let backSpace = document.getElementById("deleteOne");
+        let button7 = document.getElementById("button7");
+        let button8 = document.getElementById("button8");
+        let button9 = document.getElementById("button9");
+        let subtract = document.getElementById("subtract");
+        let button4 = document.getElementById("button4");
+        let button5 = document.getElementById("button5");
+        let button6 = document.getElementById("button6");
+        let add = document.getElementById("add");
+        let button1 = document.getElementById("button1");
+        let button2 = document.getElementById("button2");
+        let button3 = document.getElementById("button3");
+        let point = document.getElementById("point");
+        let button17 = document.getElementById("button17");
+        let button0 = document.getElementById("button0");
+        let button19 = document.getElementById("button19");
+        let equal = document.getElementById("equal");
+
+        if (document.getElementById("button1").addEventListener("click", () => {
+            let value = button1.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button2").addEventListener("click", () => {
+            let value = button2.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button3").addEventListener("click", () => {
+            let value = button3.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button4").addEventListener("click", () => {
+            let value = button4.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button5").addEventListener("click", () => {
+            let value = button5.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button6").addEventListener("click", () => {
+            let value = button6.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button7").addEventListener("click", () => {
+            let value = button7.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button8").addEventListener("click", () => {
+            let value = button8.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button9").addEventListener("click", () => {
+            let value = button9.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button0").addEventListener("click", () => {
+            let value = button0.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if(document.getElementById("add").addEventListener("click", () => {
+            let value = add.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer
+        })){
+        } else if (document.getElementById("subtract").addEventListener("click", () => {
+            let value = subtract.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("multiply").addEventListener("click", () => {
+            let value = "*";
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("divides").addEventListener("click", () => {
+            let value = "/";
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("deleteOne").addEventListener("click", () => {
+
+            let display = document.getElementById("display").value;
+            slicedDisplay = display.slice(0, -1);
+            arr = [];
+            arr.push(slicedDisplay);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+            
+        })){
+        } else if (document.getElementById("button17").addEventListener("click", () => {
+            let value = button17.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("button19").addEventListener("click", () => {
+            let value = button19.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("point").addEventListener("click", () => {
+            let value = point.value;
+            arr.push(value);
+
+            let stringVer = arr.join("");
+            document.getElementById("display").value = stringVer;
+        })){
+        } else if (document.getElementById("clearAll").addEventListener("click", () => {
+            arr = []
+            document.getElementById("display").value = arr;
+        })){
+        } else if (document.getElementById("equal").addEventListener("click", () => {
+            let value = document.getElementById("display").value;
+
+            try {
+                let answer = eval(value);
+                document.getElementById("display").value = answer;
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+            
+
+        })){
+        }
+    </script>
+</body>
+</html>
